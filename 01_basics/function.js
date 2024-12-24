@@ -31,3 +31,32 @@
 // // console.log(logInMessage('Rahul'));
 
 // console.log(logInMessage());
+
+// rest operator 
+// function cartPrice(...num1){
+//     return num1;
+// }
+
+// console.log(cartPrice(200,300,349));
+
+// const obj = {
+//     username :"Rahul",
+//     age:29
+// }
+// function handleObject(anyobj){
+//     console.log(`Username is ${anyobj.username} and user's age is ${anyobj.age}`);
+// }
+
+// handleObject(obj);
+
+// const newArr = [200,400,500,700]
+
+// function handleArray(arr)
+// {
+//     return arr
+// }
+
+// console.log(handleArray(newArr));
+
+
+
