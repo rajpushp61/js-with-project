@@ -35,11 +35,21 @@ const obj3 = {...obj1,...obj2}
 
 // console.log(obj3);
 
-console.log(tinderUser);
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
-console.log(tinderUser.hasOwnProperty('id'));
+// console.log(tinderUser);
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
+// console.log(tinderUser.hasOwnProperty('id'));
 
 
+const course = {
+    coursename : "js in hindi",
+    price:"999",
+    courseInstructor: "hitesh"
+}
+
+const {courseInstructor: instructor} = course;
+
+// console.log(courseInstructor);
+console.log(instructor);
 
