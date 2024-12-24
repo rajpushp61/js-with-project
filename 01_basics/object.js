@@ -53,3 +53,5 @@ const {courseInstructor: instructor} = course;
 // console.log(courseInstructor);
 console.log(instructor);
 
+
+
