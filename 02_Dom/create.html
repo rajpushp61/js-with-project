@@ -5,7 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: #212121;color:#fff;">
     
 </body>
+<script>
+    const div = document.createElement('div')
+    div.className = "main" 
+    div.id = "myID" 
+    console.log(div);
+    div.setAttribute("title","generated title")
+    div.style.backgroundColor = "green"
+    div.style.padding = "12px"
+    // div.innerText = "Rahul"
+    const addText = document.createTextNode("Rahul")
+    div.appendChild(addText)
+    document.body.appendChild(div)
+    
+    
+    
+</script>
 </html>
