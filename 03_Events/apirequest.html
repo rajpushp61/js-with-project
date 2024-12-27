@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121;color: #fff;">
+    <div class="Card"></div>
+</body>
+<script>
+    const obj  = {
+        username : "",
+        followerCount : ""
+    }
+    const div = document.createElement('div')
+    const edit = document.querySelector('.Card').appendChild(div)
+    
+
+    const url = 'https://api.github.com/users/rajpushp61'
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET',url)
+    xhr.onreadystatechange = function () {
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4)
+    {
+       const data = JSON.parse(this.responseText);
+       edit.innerHTML = '<button class = "click">Click Here</button>'
+       const btn = document.querySelector('.click')
+       btn.addEventListener('click',
+        display
+       )
+       const dataImg = data.avatar_url;
+    function display(){
+        edit.innerHTML = `Profile image : <img src = ${dataImg} width = 50px style = "border-radius : 25px"/> <br/> Followers: <span>${data.followers}</span>`;
+    }
+       
+        
+    }
+        
+    }
+    
+    xhr.send()
+</script>
+</html>
