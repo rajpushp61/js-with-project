@@ -1,0 +1,46 @@
+body{
+    background-color:#1a1a1a;
+    text-align:center;
+    padding:0;
+    margin:0;
+     display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:Arial;
+    font-style:bold;
+    
+}
+.container{
+    background-color:#2a2a2a;
+    color:#fff;
+    margin-top:300px;
+    border:10px;
+
+}
+#input-container{
+    margin-top:4px;
+
+}
+#todo-input{
+    padding:10px;
+    margin-left:8px;
+    background-color:#aaa;
+    border:none;
+    color:#2a2a2a;
+}
+#add-task-btn{
+    padding:10px;
+    margin-right:8px;
+    background-color:purple;
+    border:none;
+    cursor:pointer;
+    color:tanget-pink;
+}
+#add-task-btn:hover{
+    background-color:blue;
+    color:#fff;
+}
+#add-task-btn:active{
+    padding:20px;
+    background-color:red;
+}
