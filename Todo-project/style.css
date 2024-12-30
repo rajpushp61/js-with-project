@@ -41,6 +41,19 @@ body{
     color:#fff;
 }
 #add-task-btn:active{
-    padding:20px;
-    background-color:red;
+    
+    background-color:darkgrey;
+}
+#todo-list{
+    list-style: none;
+    padding:10px;
+    /* background-color:blue;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+
+
+}
+#todo-list button {
+    margin-left:130px;
 }
